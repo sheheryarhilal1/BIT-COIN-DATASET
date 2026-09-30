@@ -147,7 +147,7 @@ The analysis explores Bitcoin's historical price behavior using:
 
 ### Bitcoin Price Trend
 
-![Bitcoin Price Trend](assets/bitcoin-price.png)
+![Bitcoin Price Trend](assets/PriceAnalysis.PNG)
 
 The visualization helps identify how Bitcoin prices changed throughout the selected historical period.
 
@@ -159,13 +159,13 @@ Different charts were created to understand the behavior of the Bitcoin market.
 
 ### Price Movement
 
-![Bitcoin Analysis](assets/bitcoin-analysis.png)
+![Bitcoin Analysis](assets/InsightAnalysis.PNG)
 
 The price movement visualization provides a clearer view of Bitcoin's historical fluctuations.
 
 ### Dashboard / Visualization
 
-![Bitcoin Dashboard](assets/bitcoin-dashboard.png)
+![Bitcoin Dashboard](assets/Executive.PNG)
 
 The dashboard combines important analytical views to make the dataset easier to understand.
 
@@ -323,12 +323,20 @@ Feel free to explore the notebook, review the visualizations, and use the projec
 
 ### Bitcoin Price Analysis
 
-![Bitcoin Price Analysis](./assets/bitcoin-price-analysis.png)
+![Bitcoin Price Analysis](./assets/PriceAnalysis.PNG)
 
 ### Bitcoin Dashboard
 
-![Bitcoin Dashboard](./assets/bitcoin-dashboard.png)
+![Bitcoin Dashboard](./assets/Executive.PNG)
 
 ### Bitcoin Data Visualization
 
-![Bitcoin Visualization](./assets/bitcoin-visualization.png)
+![Bitcoin Volatility](./assets/VolatilityAnalysis.PNG)
+
+### Bitcoin Volume
+
+![Bitcoin Volume](./assets/VolumeAnalysis.PNG)
+
+### Bitcoin Timeline
+
+![Bitcoin Time INtelligence](./assets/TimeIntelligence.PNG)
