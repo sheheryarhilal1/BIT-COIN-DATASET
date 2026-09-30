@@ -1,342 +1,227 @@
-# ₿ Bitcoin Data Analysis & Visualization
+# ₿ Bitcoin Data Analysis & Power BI Dashboard
 
-![Bitcoin](https://img.shields.io/badge/Bitcoin-Data%20Analysis-orange)
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+## 📊 Project Overview
 
-## 📌 Project Overview
+This project focuses on analyzing **Bitcoin market data** using **Power BI** to identify price trends, trading volume patterns, market volatility, and time-based performance.
 
-This project focuses on **Bitcoin historical price data analysis and visualization** using Python.
-
-The objective is to explore Bitcoin market data, clean and process the dataset, identify price trends, analyze market behavior, and create meaningful visualizations that can support data-driven insights.
-
-The project uses historical Bitcoin/USD data and demonstrates practical **Data Analytics, Data Cleaning, Exploratory Data Analysis (EDA), and Data Visualization** techniques.
+The dashboard transforms raw Bitcoin data into interactive business-style visualizations that help understand how Bitcoin's **price, volume, volatility, and market behavior** change over time.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-* Analyze historical Bitcoin price movements
-* Clean and preprocess raw Bitcoin data
-* Handle missing and inconsistent values
-* Explore Bitcoin price trends over time
-* Analyze Open, High, Low and Close prices
-* Study trading volume
-* Identify important market patterns
-* Create meaningful visualizations
-* Present analytical findings using Python
-
----
-
-## 🗂️ Project Structure
-
-```text
-Bitcoin-Data-Analysis/
-│
-├── assets/
-│   ├── bitcoin-dashboard.png
-│   ├── bitcoin-price.png
-│   ├── bitcoin-analysis.png
-│   └── ...
-│
-├── Bitcoin Data.ipynb
-├── btcusd_1-min_data.csv
-├── README.md
-└── ...
-```
-
-> **Note:** All visualization images used in this README are stored inside the `assets/` folder of the same repository.
+* Analyze Bitcoin price movements over time
+* Identify high and low price periods
+* Analyze trading volume trends
+* Measure Bitcoin market volatility
+* Identify important market insights
+* Perform time-based analysis
+* Create interactive Power BI dashboards
+* Present complex financial data in an easy-to-understand format
 
 ---
 
-## 🛠️ Technologies & Tools
+## 🛠️ Tools & Technologies
 
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Matplotlib**
-* **Jupyter Notebook**
-* **Excel/CSV Dataset**
+* **Power BI**
+* **Microsoft Excel / CSV**
+* **DAX**
+* **Data Cleaning & Transformation**
 * **Data Visualization**
-* **Exploratory Data Analysis**
+* **Time-Series Analysis**
+* **Financial Data Analysis**
 
 ---
 
-## 📊 Dataset
+# 📌 Dashboard Pages
 
-The project uses historical **BTC/USD 1-minute price data**.
+## 1. Executive Dashboard
 
-The dataset contains market information such as:
+The Executive dashboard provides a high-level overview of Bitcoin's overall market performance.
 
-| Column    | Description                               |
-| --------- | ----------------------------------------- |
-| Timestamp | Date and time of the recorded market data |
-| Open      | Opening Bitcoin price                     |
-| High      | Highest Bitcoin price during the interval |
-| Low       | Lowest Bitcoin price during the interval  |
-| Close     | Closing Bitcoin price                     |
-| Volume    | Trading volume                            |
+### Key Areas
 
----
+* Bitcoin Price
+* Trading Volume
+* Market Performance
+* Price Movement
+* Overall Market KPIs
 
-## 🔄 Data Analysis Workflow
-
-```text
-Raw Bitcoin Dataset
-        ↓
-Data Loading
-        ↓
-Data Cleaning
-        ↓
-Missing Value Handling
-        ↓
-Date & Time Processing
-        ↓
-Exploratory Data Analysis
-        ↓
-Price Trend Analysis
-        ↓
-Data Visualization
-        ↓
-Business / Market Insights
-```
+![Bitcoin Executive Dashboard](assets/Executive.PNG)
 
 ---
 
-## 🧹 Data Cleaning
+## 2. Insight Analysis
 
-The dataset was inspected and prepared before performing analysis.
+This page focuses on extracting important insights from Bitcoin market data.
 
-The cleaning process included:
+### Key Analysis
 
-* Loading the CSV dataset using Pandas
-* Checking dataset dimensions
-* Checking data types
-* Detecting missing values
-* Handling duplicate records
-* Converting timestamps into readable date/time format
-* Sorting records chronologically
-* Preparing numerical columns for analysis
+* Market trends
+* Price behavior
+* Trading activity
+* Important market movements
+* Performance patterns
 
-Example:
-
-```python
-import pandas as pd
-
-df = pd.read_csv("btcusd_1-min_data.csv")
-
-print(df.head())
-print(df.info())
-print(df.isnull().sum())
-```
+![Bitcoin Insight Analysis](assets/Insight%20Analysis.PNG)
 
 ---
 
-## 📈 Bitcoin Price Analysis
+## 3. Price Analysis
 
-The analysis explores Bitcoin's historical price behavior using:
+The Price Analysis dashboard focuses on Bitcoin's historical price movement.
 
-* Opening price
-* Closing price
-* Highest price
-* Lowest price
-* Trading volume
-* Time-based trends
+### Key Analysis
 
-### Bitcoin Price Trend
+* Opening Price
+* Closing Price
+* High Price
+* Low Price
+* Price Trends
+* Historical Price Movement
 
-![Bitcoin Price Trend](assets/PriceAnalysis.PNG)
+This analysis helps identify periods of significant Bitcoin price growth and decline.
 
-The visualization helps identify how Bitcoin prices changed throughout the selected historical period.
-
----
-
-## 📊 Exploratory Data Visualization
-
-Different charts were created to understand the behavior of the Bitcoin market.
-
-### Price Movement
-
-![Bitcoin Analysis](assets/InsightAnalysis.PNG)
-
-The price movement visualization provides a clearer view of Bitcoin's historical fluctuations.
-
-### Dashboard / Visualization
-
-![Bitcoin Dashboard](assets/Executive.PNG)
-
-The dashboard combines important analytical views to make the dataset easier to understand.
-
-> If your actual image filenames are different, replace the filenames above with the exact names available inside the `assets` folder.
+![Bitcoin Price Analysis](assets/Price%20Analysis.PNG)
 
 ---
 
-## 🔍 Key Analysis Areas
+## 4. Time Intelligence
 
-### 1. Price Trends
+The Time Intelligence dashboard analyzes Bitcoin performance across different time periods.
 
-Analyzed Bitcoin's price movement over time to identify periods of:
+### Key Analysis
 
-* Growth
-* Decline
-* High volatility
-* Relative stability
+* Yearly trends
+* Monthly trends
+* Daily performance
+* Period-over-period changes
+* Time-based price movement
 
-### 2. High & Low Prices
+Time intelligence helps identify recurring patterns and changes in Bitcoin performance over time.
 
-Compared the highest and lowest prices to understand the daily/periodic price range.
-
-### 3. Trading Volume
-
-Analyzed trading volume to understand changes in market activity.
-
-### 4. Open vs Close
-
-Compared opening and closing prices to identify price movement within different periods.
-
-### 5. Market Volatility
-
-Observed significant price fluctuations to understand periods of higher market activity.
+![Bitcoin Time Intelligence](assets/Time%20Intelligence.PNG)
 
 ---
 
-## 💡 Insights
+## 5. Volatility Analysis
 
-The analysis provides a practical understanding of:
+Bitcoin is known for significant price fluctuations. This dashboard analyzes market volatility and identifies periods of higher and lower price variation.
 
-* Bitcoin's historical price behavior
+### Key Analysis
+
 * Price volatility
-* Market activity through trading volume
-* Relationship between Open, High, Low and Close prices
-* Long-term and short-term price movements
-* Patterns that can be explored further through advanced time-series analysis
+* Market fluctuations
+* High-volatility periods
+* Low-volatility periods
+* Volatility trends
 
-These findings are **descriptive observations from historical data**, not investment advice or predictions of future Bitcoin prices.
-
----
-
-## 📓 Jupyter Notebook
-
-The complete analysis and visualizations are available in:
-
-```text
-Bitcoin Data.ipynb
-```
-
-The notebook contains the Python code used for:
-
-* Data loading
-* Data preprocessing
-* Data cleaning
-* Exploratory analysis
-* Visualization
-* Statistical exploration
+![Bitcoin Volatility Analysis](assets/Volatility%20analysis.PNG)
 
 ---
 
-## ▶️ How to Run
+## 6. Volume Analysis
 
-### 1. Clone the repository
+The Volume Analysis dashboard focuses on Bitcoin's trading activity.
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
+### Key Analysis
 
-### 2. Open the project
+* Trading volume
+* Volume trends
+* High-volume periods
+* Low-volume periods
+* Relationship between price and volume
 
-```bash
-cd Bitcoin-Data-Analysis
-```
+Trading volume can help identify periods of increased market activity.
 
-### 3. Install required libraries
-
-```bash
-pip install pandas numpy matplotlib jupyter
-```
-
-### 4. Start Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-### 5. Open
-
-```text
-Bitcoin Data.ipynb
-```
+![Bitcoin Volume Analysis](assets/Volume%20Analysis.PNG)
 
 ---
 
-## 📌 Project Highlights
+# 📈 Key Insights
 
-* Historical Bitcoin market data analysis
-* Large time-series dataset
-* Data cleaning and preprocessing
-* Exploratory Data Analysis
-* Price trend visualization
-* Trading volume analysis
-* Python-based analytics
-* Jupyter Notebook implementation
-* GitHub-ready project structure
+The dashboard provides several useful insights into Bitcoin market behavior:
 
----
+### 🔹 Price Movement
 
-## 🚀 Future Improvements
+Bitcoin's price changes significantly over time, with periods of strong growth followed by corrections and declines.
 
-This project can be extended with:
+### 🔹 Trading Volume
 
-* Interactive Plotly dashboards
-* Power BI Bitcoin dashboard
-* Moving Average analysis
-* RSI indicator
-* MACD analysis
-* Candlestick charts
-* Correlation analysis
-* Time-series forecasting
-* Machine Learning models
-* Automated data collection through APIs
+Trading volume tends to increase during periods of significant market movement, indicating stronger market participation.
+
+### 🔹 Market Volatility
+
+Bitcoin experiences considerable volatility, making volatility analysis important for understanding market risk.
+
+### 🔹 Time-Based Patterns
+
+Time intelligence provides a better understanding of how Bitcoin's performance changes across different periods.
+
+### 🔹 Price & Volume Relationship
+
+Comparing price movement with trading volume helps identify periods of strong buying or selling activity.
 
 ---
 
-## 👨‍💻 Author
+# 💡 Business / Analytical Value
 
-**Sheheryar Ahmed**
+Although Bitcoin is a financial asset, the project demonstrates several skills that are directly applicable to business analytics:
 
-**Data Analyst | Power BI Developer | Python | SQL | Data Visualization**
-
-GitHub:
-https://github.com/sheheryarhilal1
+* KPI development
+* Trend analysis
+* Time-series analysis
+* Data storytelling
+* Interactive dashboard development
+* Financial data visualization
+* Data-driven decision making
 
 ---
 
-## ⭐ If You Find This Project Useful
+# 📊 Dashboard Preview
 
-Feel free to explore the notebook, review the visualizations, and use the project as a reference for learning **Python Data Analysis and Visualization**.
+### Executive Dashboard
 
-**Made with Python, Pandas & Data Visualization.**
+![Executive Dashboard](assets/Executive.PNG)
 
+### Insight Analysis
 
-## 📊 Project Visualizations
+![Insight Analysis](assets/Insight%20Analysis.PNG)
 
-### Bitcoin Price Analysis
+### Price Analysis
 
-![Bitcoin Price Analysis](./assets/PriceAnalysis.PNG)
+![Price Analysis](assets/Price%20Analysis.PNG)
 
-### Bitcoin Dashboard
+### Time Intelligence
 
-![Bitcoin Dashboard](./assets/Executive.PNG)
+![Time Intelligence](assets/Time%20Intelligence.PNG)
 
-### Bitcoin Data Visualization
+### Volatility Analysis
 
-![Bitcoin Volatility](./assets/VolatilityAnalysis.PNG)
+![Volatility Analysis](assets/Volatility%20analysis.PNG)
 
-### Bitcoin Volume
+### Volume Analysis
 
-![Bitcoin Volume](./assets/VolumeAnalysis.PNG)
+![Volume Analysis](assets/Volume%20Analysis.PNG)
 
-### Bitcoin Timeline
+---
 
-![Bitcoin Time INtelligence](./assets/TimeIntelligence.PNG)
+# 🚀 Skills Demonstrated
+
+**Power BI | DAX | Data Analysis | Data Visualization | Time-Series Analysis | Financial Analytics | Dashboard Design | Data Storytelling**
+
+---
+
+# 👨‍💻 Project Purpose
+
+This project was developed as part of a **Data Analytics / Power BI portfolio** to demonstrate the ability to transform raw Bitcoin market data into an interactive analytical dashboard.
+
+The focus is not only on visualization, but also on extracting meaningful insights from financial data.
+
+---
+
+## ⭐ Conclusion
+
+The Bitcoin Analysis Dashboard provides an interactive way to explore **price, volume, volatility, and time-based market behavior**.
+
+It demonstrates how Power BI can be used to transform complex financial datasets into clear, interactive, and decision-supporting visualizations.
